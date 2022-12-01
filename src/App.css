@@ -111,8 +111,9 @@
     border: ridge;
     border-color: black;
     padding: 0px;
+    width: 100%;
     border-radius: 6px;
-    height: 55px;
+    /* height: 55px; */
 }
 
 .logofix{
@@ -195,6 +196,11 @@
 
 }
 
+/* .loginn{
+    border: ridge;
+    text-align: center;
+    justify-content: center;
+} */
 
 .akun{
 /* padding-left: 100px; */

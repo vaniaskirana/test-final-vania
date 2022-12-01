@@ -70,7 +70,7 @@ function Navbar() {
                 
                 </ul>
                 <ul className="navbar-nav navmenu1 akun">
-                    <li className="nav-item text-right dropdown "><a className="nav-link navmenu" onClick={HandleLogout}>Logout</a></li>
+                    <li className="nav-item text-center dropdown "><a className="nav-link navmenu" onClick={HandleLogout}>Logout</a></li>
                 </ul>   
                     </div>
 

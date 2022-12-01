@@ -33,11 +33,11 @@ function AdminCPengguna() {
 
     const deleteUser = async (_id) => {
         try {
-            await axios.delete(`https://testvoluntegreen.onrender.com/signup/${_id}`)
+            await axios.delete(`https://voluntegreen.onrender.com/admin/${_id}`);
             getUsersBE();
             console.log(_id)
-        } catch (err){
-            console.log(err);
+        } catch (error){
+            console.log(error);
         }
 
     }
