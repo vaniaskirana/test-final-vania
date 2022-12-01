@@ -198,190 +198,6 @@ input[type="file"]{
     margin-left: 6vh;
 }
 
-@media only screen and (max-width: 1260px) {
-
-    .cardKomunitas{
-        margin-top: 30px;
-        margin-right: 240px;
-        margin-left: 240px;
-        margin-bottom:100px;
-        box-shadow: 1px 2px 4px 1.5px grey;
-        border-radius: 16px;
-        background-color: white;
-    }
-
-    .formInput{
-        font-size: 12px;
-        font-weight: normal;
-        margin-top: 1vh;
-        border-radius: 20px;
-        width: 80vh;
-        height: 6vh;
-        margin-bottom: 1vh;
-        text-align: left;
-    }
-
-    .uploadedImage img{
-        width: 80vh;
-        align-content: center;
-    }
-    
-    .disqus{
-        width: 90%;
-        margin-left: 5vh;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-
-    .formInput{
-        font-size: 12px;
-        font-weight: normal;
-        margin-top: 1vh;
-        border-radius: 20px;
-        width: 70vh;
-        height: 6vh;
-        margin-bottom: 1vh;
-        text-align: left;
-    }
-
-    .uploadedImage img{
-        width: 80vh;
-        align-content: center;
-    }
-    
-    .disqus{
-        width: 90%;
-        margin-left: 4vh;
-    }
-
-    .contentTextUpload p{
-        font-size: 2.5vh;
-    }
-    
-    .titleUpload p{
-        font-size: 4vh;
-    }
-
-    .daerahUpload{
-        font-size: 2vh;
-    }
-}
-
-@media only screen and (max-width: 1060px) {
-
-    .formInput{
-        font-size: 12px;
-        font-weight: normal;
-        margin-top: 1vh;
-        border-radius: 20px;
-        width: 60vh;
-        height: 6vh;
-        margin-bottom: 1vh;
-        text-align: left;
-    }
-
-    .uploadedImage img{
-        width: 80vh;
-        align-content: center;
-        margin-left: -2.8vh;
-    }
-    
-    .disqus{
-        width: 80%;
-        margin-left: 6vh;
-    }
-
-    .contentTextUpload p{
-        font-size: 2.5vh;
-    }
-    
-    .titleUpload p{
-        font-size: 4vh;
-    }
-
-    .daerahUpload{
-        font-size: 2vh;
-    }
-}
-
-@media only screen and (max-width: 1140px) {
-
-    .formInput{
-        font-size: 12px;
-        font-weight: normal;
-        margin-top: 1vh;
-        border-radius: 20px;
-        width: 50vh;
-        height: 6vh;
-        margin-bottom: 1vh;
-        text-align: left;
-    }
-
-    .uploadedImage img{
-        width: 70vh;
-        align-content: center;
-        margin-left: -2.8vh;
-    }
-    
-    .disqus{
-        width: 80%;
-        margin-left: 6vh;
-    }
-
-    .contentTextUpload p{
-        font-size: 2.5vh;
-    }
-    
-    .titleUpload p{
-        font-size: 4vh;
-    }
-
-    .daerahUpload{
-        font-size: 2vh;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-
-    .formInput{
-        font-size: 8px;
-        font-weight: normal;
-        margin-top: 1vh;
-        border-radius: 20px;
-        width: 40vh;
-        height: 6vh;
-        margin-bottom: 1vh;
-        text-align: left;
-    }
-
-    .formInput p{
-        margin-top: 1.6vh;
-    }
-
-    .uploadedImage img{
-        width: 60vh;
-        align-content: center;
-        margin-left: -2.8vh;
-    }
-    
-    .disqus{
-        width: 80%;
-        margin-left: 6vh;
-    }
-
-    .contentTextUpload p{
-        font-size: 2vh;
-    }
-    
-    .titleUpload p{
-        font-size: 4vh;
-    }
-
-    .daerahUpload{
-        font-size: 2vh;
-    }
-}
 
 @media only screen and (max-width: 890px) {
 
@@ -670,7 +486,7 @@ input[type="file"]{
         font-weight: normal;
         margin-top: 1vh;
         border-radius: 20px;
-        width: 30vh;
+        width: 15vh;
         height: 7vh;
         margin-bottom: 1vh;
         text-align: left;
@@ -682,83 +498,20 @@ input[type="file"]{
         margin-left: -2.8vh;
     }
 
-    .commentSectionIcon, .shareSectionIcon{
-        width: 140px;
-    }
-
-    .shareCommentText{
-        font-size: 2vh;
-    }
-
-    /* .shareCommentIcon{
-
-    } */
-}
-
-@media only screen and (max-width: 377px) {
-
-    .cardKomunitas{
-        margin-top: 30px;
-        margin-right: 40px;
-        margin-left: 40px;
-        margin-bottom:100px;
-        box-shadow: 1px 2px 4px 1.5px grey;
-        border-radius: 16px;
-        background-color: white;
-    }
-
-    .formInput{
-        font-size: 10px;
-        font-weight: normal;
-        margin-top: 1vh;
-        border-radius: 20px;
-        width: 30vh;
-        height: 7vh;
-        margin-bottom: 1vh;
-        text-align: left;
-    }
-
-    .uploadedImage img{
-        width: 50vh;
-        align-content: center;
-        margin-left: -2.8vh;
-    }
-
-    .commentSectionIcon, .shareSectionIcon{
-        width: 140px;
-    }
-
-    .shareCommentText{
-        font-size: 2vh;
-    }
-
-    /* .shareCommentIcon{
-
-    } */
-}
-
-@media only screen and (max-width: 317px) {
-
-    .cardKomunitas{
-        margin-top: 30px;
-        margin-right: 20px;
+    .commentSectionIcon {
+        width: 10px;
         margin-left: 20px;
-        margin-bottom:100px;
-        box-shadow: 1px 2px 4px 1.5px grey;
-        border-radius: 16px;
-        background-color: white;
     }
-}
-
-@media only screen and (max-width: 299px) {
-
-    .cardKomunitas{
-        margin-top: 30px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom:100px;
-        box-shadow: 1px 2px 4px 1.5px grey;
-        border-radius: 16px;
-        background-color: white;
+    .shareSectionIcon {
+        width: 10px;
+        margin-left: 100px;
     }
+
+    .shareCommentText{
+        font-size: 12px;
+    }
+
+    /* .shareCommentIcon{
+
+    } */
 }
