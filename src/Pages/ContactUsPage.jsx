@@ -1,4 +1,4 @@
-import DataContactUs from "../Components/ContactUs/dataContactUs"
+import DataContactUs from "../Components/ContactUskuu/DataContactUs"
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 
