@@ -113,7 +113,7 @@ svg {
     /* text-justify: auto; */
     text-align: center;
     /* border: ridge; */
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 
@@ -122,13 +122,12 @@ svg {
     flex-wrap: wrap;
     flex-direction: row;
     /* border: ridge; */
-    margin-bottom: 100px;
 }
 
-.sinopsiscabang{
-    /* border: ridge; */
+/* .sinopsiscabang{
+    border: ridge;
     padding: 10px;
-}
+} */
 
 
 .dampakfirst{
@@ -136,11 +135,6 @@ svg {
     padding-top: 80px;
 }
 
-
-
-
-   
-  
 
 /* .txt-category #txt-item{
     font-size: 13px;

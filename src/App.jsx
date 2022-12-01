@@ -19,8 +19,8 @@ import AdminPage from './admin/AdminPage'
 import AdminCrud from './admin/AdminCrud'
 import EditProfile from './Components/Akun/EditProfile'
 import Profile from './Components/Akun/Profile'
-import AboutUs from './Components/HomePage/AboutUs'
 import DataAboutUs from './Components/AboutUs/DataAboutUs'
+import KomunitasPage from './Pages/KomunitasPage'
 // import Forum from './Pages/Forum'
 // import './css/style-penanggulangan.css'
 
@@ -46,6 +46,7 @@ function App() {
         <Route path="/about" element={<DataAboutUs/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path='/editprofile/:id' element={<EditProfile/>}/>
+        <Route path="/forum" element={<KomunitasPage/>}/>
       </Routes>
       {/* <Footer/> */}
     </>

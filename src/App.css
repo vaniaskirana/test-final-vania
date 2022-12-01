@@ -112,6 +112,7 @@
     border-color: black;
     padding: 0px;
     border-radius: 6px;
+    height: 55px;
 }
 
 .logofix{
@@ -212,8 +213,8 @@
 }
 #menuu {
     /* margin-left: 100px; */
-    padding-top: 20px;
-    font-size: 14px;
+    padding-top: 25px;
+    font-size: 16px;
     font-weight: 1000;
     color: white;    
     

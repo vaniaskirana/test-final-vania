@@ -8,7 +8,7 @@ const DataAboutUs = () => {
         <div id="AboutUsPagee">
             <Navbar/>
 
-            <div className="card cardAboutUs">
+            <div className="card cardAboutUs ">
             
                 <div className="row">
                     <h2 className="aboutUsTitle">About Us</h2>
@@ -30,17 +30,17 @@ const DataAboutUs = () => {
                 <div className="d-flex justify-content-evenly profileAboutUs">
                     <div style={{}}>
                         <img src="img/AboutUsImgFirdaus.png" className="imgProfile"/>
-                        <h3 className="namaDaus">Firdaus</h3>
+                        <h3 className="namaDaus nama">Firdaus</h3>
                     </div>
 
                     <div>
                         <img src="img/AboutUsImgVania.png" className="imgProfile"/>
-                        <h3 className="namaVania">Vania</h3>
+                        <h3 className="namaVania nama">Vania</h3>
                     </div>
                     
                     <div style={{}}>
                         <img src="img/AboutUsImgIlham.png" className="imgProfile"/>
-                        <h3 className="namaIlham">Ilham</h3>
+                        <h3 className="namaIlham nama">Ilham</h3>
                     </div>
 
                 </div>
@@ -50,20 +50,20 @@ const DataAboutUs = () => {
                     <h2 className="aboutUsTitle" id="titleLearnTrack">Back-End</h2>
                 </div>
 
-                <div className="d-flex justify-content-evenly">
+                <div className="d-flex justify-content-evenly profileAboutUs">
                     <div>
                         <img src="img/AboutUsImgLisa.png" className="imgProfile"/>
-                        <h3 className="namaLisa">Lisa</h3>
+                        <h3 className="namaLisa nama">Lisa</h3>
                     </div>
 
                     <div>
                         <img src="img/AboutUsImgFebri.png" className="imgProfile"/>
-                        <h3 className="namaFebri">Febri</h3>
+                        <h3 className="namaFebri nama">Febri</h3>
                     </div>
                     
                     <div>
                         <img src="img/AboutUsImgRosy.png" className="imgProfile"/>
-                        <h3 className="namaRosy">Rosy</h3>
+                        <h3 className="namaRosy nama">Rosy</h3>
                     </div>
 
                 </div>
