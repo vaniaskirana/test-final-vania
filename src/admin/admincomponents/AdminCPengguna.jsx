@@ -10,24 +10,24 @@ function AdminCPengguna() {
     const {_id} = useParams()
     
 ////ini jaga2 untuk getUser yang biasa testvoluntegreen
-    const getUsersBE = async () => {
-         axios.get(api_url)
-        .then(res => 
-        setApiUser(res.data.data),
-        // console.log(res.data.data)
-        )
-        .catch((err) => console.log(err))
-};
+//     const getUsersBE = async () => {
+//          axios.get(api_url)
+//         .then(res => 
+//         setApiUser(res.data.data),
+//         // console.log(res.data.data)
+//         )
+//         .catch((err) => console.log(err))
+// };
 
 //ini untuk getUser deploy Fix API
-// const getUsersBE = async () => {
-//     axios.get('https://testvoluntegreen.onrender.com/users')
-//    .then(res => 
-//    setApiUser(res.data.data),
-//    // console.log(res.data.data)
-//    )
-//    .catch((err) => console.log(err))
-// };
+const getUsersBE = async () => {
+    axios.get('https://voluntegreen.onrender.com/admin')
+   .then(res => 
+   setApiUser(res.data.data),
+   // console.log(res.data.data)
+   )
+   .catch((err) => console.log(err))
+};
 
     useEffect(() => {
     //  getUsers();
@@ -45,26 +45,26 @@ function AdminCPengguna() {
 
 
     // ini untuk delete fix API
-    // const deleteUser = async (_id) => {
-    //     try {
-    //         await axios.delete(`https://voluntegreen.onrender.com/admin/${_id}`);
-    //         getUsersBE();
-    //         console.log(_id)
-    //     } catch (error){
-    //         console.log(error);
-    //     }
-    // }
-
-    // ini untuk delete test API BE
     const deleteUser = async (_id) => {
         try {
-            await axios.delete(`https://testvoluntegreen.onrender.com/users/${_id}`)
+            await axios.delete(`https://voluntegreen.onrender.com/admin/${_id}`);
             getUsersBE();
-            console.log(_id + "  Deleted")
-        } catch (err){
-            console.log(err);
+            console.log(_id)
+        } catch (error){
+            console.log(error);
         }
     }
+
+    // ini untuk delete test API BE
+    // const deleteUser = async (_id) => {
+    //     try {
+    //         await axios.delete(`https://testvoluntegreen.onrender.com/users/${_id}`)
+    //         getUsersBE();
+    //         console.log(_id + "  Deleted")
+    //     } catch (err){
+    //         console.log(err);
+    //     }
+    // }
 
     return (
     <>

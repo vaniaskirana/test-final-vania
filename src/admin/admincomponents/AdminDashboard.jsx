@@ -4,7 +4,7 @@ import { useEffect, useState} from "react"
 
 
 function AdminDashboard() {
-    const api_url = "https://testvoluntegreen.onrender.com/users";
+    const api_url = "https://voluntegreen.onrender.com/admin";
     const [apiUser, setApiUser] = useState([])
     const [totalSum, setTotalSum] = useState(0);
 

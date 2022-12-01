@@ -1,13 +1,24 @@
 // import Logo from "/public/LogresAssets/img/logo.png";
 import "/src/css/Logres.css";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import HomePage from "../../Pages/HomePage";
 import { useDispatch } from "react-redux";
-import { loginReducer } from "../../redux/loginReducer";
 import axios from "axios";
 import Footer from "../Footer";
 
+// const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODc3MzVjMmIwYWMwYjZlMTg0ODQ2ZiIsImlhdCI6MTY2OTkwNzQxMiwiZXhwIjoxNjY5OTkzODEyfQ.OD_Cq5EZu5IoqXRgLh4McimBf8PD-x6gwnwr8JUAvKg'
+// const api_url = 'https://voluntegreen.onrender.com/signin'
+
+// axios.interceptors.request.use(
+//   config => {
+//     config.headers.authorization = `Bearer ${token}`;
+//     return config;
+//   },
+//   error => {
+//     return Promise.reject(error);
+//   }
+// )
 
 const Login = () => {
   const cekEmail = localStorage.getItem("account");
@@ -18,6 +29,18 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const [users, setUsers] = useState([]);
+  const [requestError, setRequestError] = useState();
+
+  const fetchData = useCallback(async () => {
+    try {
+      const result = await axios.get(`${api_url}`)
+      setUsers(result.data.data)
+    } catch(err){
+      setRequestError(err.message);
+        }
+  })
+
   // const loginn = useSelector(state => state.login)
 
       // axios.get('https://testvoluntegreen.onrender.com/users')
@@ -26,15 +49,69 @@ const Login = () => {
       // console.log(res.data.data)
       // )
       // .catch((err) => console.log(err))
-  
+     
+
+
+    
 
   useEffect(()=>{
-    if(cekEmail&&cekPassword){
-      navigation(`/dashboard`)
-    }else{
-      navigation(`/`)
-    }
-  },[cekEmail])
+    // if(cekEmail&&cekPassword){
+    //   navigation(`/dashboard`)
+    // }else{
+    //   navigation(`/`)
+    // }
+    // axios.post('https://voluntegreen.onrender.com/signin', async (req, res) => {
+    //   try {
+    //     const {email, password} = req.body;
+    //     const user = await user.findOne({
+    //       email
+    //     }).lean();
+
+    //     if (!user){
+    //       return res.status(403).json({
+    //         message: 'Wrong email or password.'
+    //       });
+    //     }
+    //     const passwordValid = await verifyPassword(
+    //       password,
+    //     );
+        
+    //     if (passwordValid){
+    //       const {password, bio, ...rest} =  user;
+    //       const userInfo = Object.assign({}, {...rest});
+    //       const token = createToken(userInfo);
+    //       const decodedToken = jwtDecode(token);
+    //       const expiresAt = decodedToken.exp;
+
+    //       res.session.user = userInfo;
+
+    //       res.json({
+    //         message: 'Authentication Successfull!',
+    //         token,
+    //         userInfo,
+    //         expiresAt
+    //       });
+    //     } else {
+    //       res.status(403).jsonn({
+    //         message: 'Wrong email or Password.'
+    //       });
+    //     }
+
+    //   } catch (err){
+    //     console.log(err);
+    //     return res
+    //       .status(400)
+    //       .json({message: 'Something went Wrong.'});
+    //   }
+
+    // })
+
+
+  },[])
+
+ 
+
+
 
   const handleEmail = (e) => {
     setEmail(e.target.value);

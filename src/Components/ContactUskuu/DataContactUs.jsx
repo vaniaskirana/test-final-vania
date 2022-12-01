@@ -14,7 +14,7 @@ const DataContactUs = () => {
                 </div>
 
                 <div className="row contentAboutUs">
-                    <p>Sobat VolunteGreen dapat menghubungi kami dengan mengirimkan pesan pertanyaan atau masukan kepada kami melalui Gmail dibawah ini ya !!</p>
+                    <p>Sobat VolunteGreen dapat menghubungi kami dengan mengirimkan pesan pertanyaan atau masukan kepada kami melalui email di bawah ini ya !!</p>
                 </div>
 
                 <div className="row">
