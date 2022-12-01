@@ -24,19 +24,19 @@ function DataFetching1(){
     return(
         <>
             {penanggulangan.map((item, index) => (
-                <div key={index} className="row me-0">
-                    <div className="col-xl-6 me-0" id="gambar">
-                        <img src={item.img} className="img-fluid me-0" style={{borderRadius: "20px", marginTop: "2rem"}}/>
-                    </div>
+                <div key={index} className="row me-0 d-flex flex-row-reverse">
                     <div className="col-md" id="ket-gambar">
-                        <h1 style={{fontSize: "55px", paddingTop: "1em"}}>{item.title}</h1>
+                        <h1>{item.title}</h1>
+                    </div>
+                    <div className="col-xl-6 me-0" id="gambar">
+                        <img src={item.img} className="img-fluid me-0" style={{borderRadius: "20px"}}/>
                     </div>
                 </div>
             ))}
 
             {penanggulangan2.map((item, index) => (
                 <div className="container" key={index}>
-                <div className=" row datfec1b" >
+                <div className=" row datfec1b d-flex" >
                     <div className="col" id="gambarKrisisIklim">
                         <h1 id="titleKrisisIklim">
                             {item.title}
@@ -46,8 +46,8 @@ function DataFetching1(){
                             
                         
                     </div>
-                    <div className="col">
-                        <img src={item.img} className="img-fluid" id="gambar2" width={200}/>
+                    <div className="col-xl-1  gambar22" style={{marginLeft: "-5px", width: "80%"}}>
+                        <img src={item.img} className="img-fluid " id="gambar2"/>
                     </div>
                 </div>
                 </div>

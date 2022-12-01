@@ -19,7 +19,7 @@ const Penanggulangan = () => {
             <div className="row">
             <div className="col"> 
 
-            <div className="box-item col-4" style={{width: "200px"}}>
+            <div className="box-item col-4" style={{width: "200px", marginLeft: "-10px"}}>
                 <div className="flip-box">
 
                     <div className="flip-box-front text-center responKotak" style={{backgroundColor: "#91DF89"}}>
@@ -48,13 +48,13 @@ const Penanggulangan = () => {
 
             <div className="col">
 
-                <div className="box-item col4" style={{width: "200px"}}>
+                <div className="box-item col4" style={{width: "200px", marginLeft: "2px"}}>
                     <div className="flip-box">
     
                         <div className="flip-box-front text-center responKotak geserBang" style={{backgroundColor: "#018071"}}>
-                            <div className="inner colo-white">
+                            <div className="inner colo-white ReduceImg">
                                 <h1 className="flip-box-header">Reduce</h1>
-                                <img src={reduceImg} id="img-3R" style={{width: "300px", paddingLeft: "4rem"}}/>
+                                <img className='' src={reduceImg} id="img-3R imgReduce"/>
                             </div>
                         </div>
                         
@@ -74,7 +74,7 @@ const Penanggulangan = () => {
 
                 <div className="col">
                     
-                    <div className="box-item col-4" style={{width: "200px"}}>
+                    <div className="box-item col-4" style={{width: "200px", marginLeft: "-10px"}}>
                         <div className="flip-box">
         
                             <div className="flip-box-front text-center responKotak geserBang" style={{backgroundColor: "#08B88A"}}>
@@ -120,8 +120,10 @@ const Penanggulangan = () => {
                 </p>
             </div>
 
-            <div className="col">
-                <img src={pencemaranAirImg} id="gambar-pencemaran" style={{marginTop:"2rem", marginBottomp:"100px", width: "50vw", marginLeft: "1.5rem", justifyItems: "center", borderRadius: "50px"}}/>
+            <div className="col gambar-pencemaran">
+                <center>
+                <img src={pencemaranAirImg} id="" style={{marginTop:"2rem", borderRadius: "20px"}}/>
+                </center>
             </div>
         </div>
     </div>
@@ -130,33 +132,42 @@ const Penanggulangan = () => {
         <div className='container'>
 
         <div className="row" style={{paddingLeft: "2rem"}}>
-            <div className="col">
-                <div className="card" style={{width: "15rem", minHeight:"300px", borderRadius: "35px", backgroundColor: "#018071", border: "none"}}>
-                    <p className="himbauan">Tidak membuang sampah dan <br/> bahan - bahan pencemar ke sungai, danau dan laut</p>
-                    <img src={himbauan1Img} style={{width: "70%", height: "10em", marginLeft: "60px"}}/>
+            <center>
+                <div className="col">
+                    <div className="card" style={{width: "15rem", minHeight:"300px", borderRadius: "35px", backgroundColor: "#018071", border: "none"}}>
+                        <p className="himbauan">Tidak membuang sampah dan <br/> bahan - bahan pencemar ke sungai, danau dan laut</p>
+                        <img src={himbauan1Img} style={{width: "70%", height: "10em", marginLeft: "60px"}}/>
+                    </div>
                 </div>
-            </div>
-            
+            </center>
+
+
+            <center>
             <div className="col">
                 <div className="card" style={{width: "15rem", minHeight:"300px", borderRadius: "35px", backgroundColor: "#08B88A", border: "none"}}>
                     <p className="himbauan">Jika terpaksa harus membuang ke sungai, limbah di olah terlebih dahulu agar tidak membahayakan lingkungan</p>
                     <img src={himbauan2Img} style={{width: "45%", height: "7em", marginLeft: "90px"}}/>
                 </div>
             </div>
+            </center>
 
+            <center>
             <div className="col">
                 <div className="card" style={{width: "15rem", minHeight:"330px", borderRadius: "35px", backgroundColor: "#91DF89", border: "none"}}>
                     <p className="himbauan-2">Melaporkan kepada pihak bewajib jika ada pihak yang mencemari lingkungan perairan</p>
                     <br/><img src={himbauan3Img} style={{width: "30%", height: "7em", marginLeft: "30px"}}/>
                 </div>
             </div>
+            </center>
 
-            <div className="col">
-                <div className="card" style={{width: "15rem", minHeight: "320px", borderRadius: "35px", backgroundColor: "#FDE3B3", border: "none;"}}>
-                    <p className="himbauan-2">Bersama - sama anggota masyarakat lainnya melakukan upaya menjaga sungai dari pencemaran</p>
-                    <img src={himbauan4Img} style={{width: "35%", marginLeft: "120px", marginTop: "20px"}}/>
+            <center>
+                <div className="col">
+                    <div className="card kartu4" style={{width: "15rem", minHeight: "320px", borderRadius: "35px", backgroundColor: "#FDE3B3", border: "none;"}}>
+                        <p className="himbauan-2">Bersama - sama anggota masyarakat lainnya melakukan upaya menjaga sungai dari pencemaran</p>
+                        <img src={himbauan4Img} style={{width: "35%", marginLeft: "120px", marginTop: "20px"}}/>
+                    </div>
                 </div>
-            </div>
+            </center>
         </div>
         </div>
         <br/>

@@ -17,7 +17,7 @@ function DataFetching2(){
 
             {penanggulangan3.map((item, index) => (
                 <div className="col" style={{textAlign:"center"}} key={index}>
-                    <div id="ket-gambar" className="judul2" style={{marginTop: "2rem"}}>{item.title}</div>
+                    <div id="ket-gambar" className="judul2" style={{marginTop: "2rem"}}><h1>{item.title}</h1></div>
                     <p>
                         {item.content}
                     </p>

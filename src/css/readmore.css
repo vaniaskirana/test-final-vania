@@ -331,10 +331,39 @@ body{
     text-align: left;
 }
 
+.ReduceImg img {
+    margin-top: 80px;
+    /* border: ridge; */
+    width: 270px;
+}
+
+.gambar22 img {
+    width: 10px;
+
+}
+
 @media only screen and (max-width: 991px){
     .textPeran p{ 
         font-size: 2vw;
         margin: 67px;
+    }
+
+    .ReduceImg img {
+        width: 250px;
+    }
+    .gambar22 img {
+        width: 10px;
+    
+    }
+
+    .gambar-pencemaran img{
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .kartu4 {
+        /* border: ridge; */
+        margin-right: px;
     }
 
     #menjaga-hutan-isi{

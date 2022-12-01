@@ -23,7 +23,7 @@ function DataFetching3(){
                         <img src={item.img} className="img-fluid" style={{width: "120em", marginLeft: "2rem", marginTop: "6rem", marginRight: "0rem", borderRadius: "20px"}}/>
                     </div>
                     
-                    <div className="col-lg textPeran" id="peran-hutan" style={{color: "white", marginLeft: "2rem", marginRight: "4rem"}}>
+                    <div className="col textPeran" id="peran-hutan" style={{color: "white", marginLeft: "2rem", marginRight: "4rem"}}>
                     <br/>
                         <a id="judul2" >{item.title}</a><br/>
                         <a id="judul2" >{item.title2}</a><br/>
