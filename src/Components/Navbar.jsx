@@ -55,15 +55,17 @@ function Navbar() {
 
              {/* <!-- Menu lainnya------------------------------- --> */}
                     <li className="nav-item dropdown akun">
-                    <Link to={"/abouut"} style={{textDecoration: 'none'}} className="nav-link navmenu">About Us</Link>
+                    <Link to={"/about"} style={{textDecoration: 'none'}} className="nav-link navmenu">About Us</Link>
                 
                     </li>
                     <li className="nav-item dropdown akun">
                     <a className="nav-link navmenu" href="#contact">Contact Us</a>
                     </li>
+
                     <li className="nav-item dropdown akun">
-                    <a className="nav-link" href="">Account</a>
-                    <img src="img/avatar.png" width="60"/>              
+
+                     <Link to={"/profile"} style={{ textDecoration: "none" }} className="nav-link" >Account
+                    <img src="img/avatar.png" width="60"/></Link>       
                     </li>
                 
                 </ul>

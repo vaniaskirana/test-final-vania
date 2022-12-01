@@ -34,7 +34,7 @@ function FetchHomePage() {
         <div className="profile-content">
           <div className="profile-name">{item.title}</div>                      
             <div className="profile-description">{item.konten}</div>
-            <Link to={"/penanggulangan"}>
+            <Link to={"/pencegahan"}>
             <div className="col-3 text-center profile-overview readmorepencegahan"><a style={{color: "white"}}>Read More</a></div>
             </Link>
         </div>

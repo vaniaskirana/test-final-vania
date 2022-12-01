@@ -17,6 +17,10 @@ import FetchDampak from './Components/Dampak/FetchDampak'
 import ProtectedRoutes from './ProtectedRoutes'
 import AdminPage from './admin/AdminPage'
 import AdminCrud from './admin/AdminCrud'
+import EditProfile from './Components/Akun/EditProfile'
+import Profile from './Components/Akun/Profile'
+import AboutUs from './Components/HomePage/AboutUs'
+import DataAboutUs from './Components/AboutUs/DataAboutUs'
 // import Forum from './Pages/Forum'
 // import './css/style-penanggulangan.css'
 
@@ -39,6 +43,9 @@ function App() {
         <Route path="/admin" element={<AdminPage/>}/>
         <Route path="/admin-crud" element={<AdminCrud/>}/>
         {/* <Route path="/forum" element={<Forum/>}/>  */}
+        <Route path="/about" element={<DataAboutUs/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path='/editprofile/:id' element={<EditProfile/>}/>
       </Routes>
       {/* <Footer/> */}
     </>

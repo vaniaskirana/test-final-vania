@@ -1,0 +1,575 @@
+.cardAboutUs{
+    background-color: #FFFFFF;
+    width: 180vh;
+    margin-top: 80px; 
+    margin-left: 115px; 
+    border-radius: 20px;
+}
+
+.aboutUsTitle{
+    text-align: center;
+    padding-top: 60px; 
+    font-weight: bold;
+}
+
+.volunteGreenLogo{
+    text-align: center; 
+    padding-top: 40px;
+    font-weight: bold; 
+    color: white; 
+    -webkit-text-stroke: 2px black;
+}
+
+.contentAboutUs{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+.profielAboutUs{
+    padding-bottom: 80vh;
+}
+
+#titleLearnTrack{
+    padding-bottom: 40px;
+}
+
+.imgProfile{
+    width: 10vw;
+}
+
+/* CSS DARI NAMA */
+
+.namaDaus{
+    margin-left: 18px;
+    margin-top: 14px;
+}
+
+.namaVania{
+    margin-left: 28px;
+    margin-top: 11px;
+}
+
+.namaIlham{
+    margin-left: 34px;
+    margin-top: 14px;
+}
+
+.namaLisa{
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+.namaFebri{
+    margin-left: 36px;
+    margin-top: 12px;
+}
+
+.namaRosy{
+    margin-left: 38px;
+    margin-top: 12px;
+}
+
+@media screen and (min-width:200px) {
+    .aboutUsTitle{
+        text-align: center;
+        padding-top: 30px; 
+        font-weight: bold;
+        font-size: 6vw;
+    }
+    
+    .contentAboutUs{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 2px;
+        text-align: justify;
+        font-size: 1.5vw;
+    }
+    
+    .volunteGreenLogo{
+        text-align: center; 
+        padding-top: 2px;
+        font-weight: bold;
+        font-size: 4vw; 
+        color: white; 
+        -webkit-text-stroke: 2px black;
+    }
+
+    .cardAboutUs{
+        background-color: #FFFFFF;
+        width: 22vh;
+        margin-top: 30px; 
+        margin-left: 50px; 
+        border-radius: 20px;
+    }
+    .namaDaus{
+        margin-left: -4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaVania{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaIlham{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaLisa{
+        margin-left: 12px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaFebri{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaRosy{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .aboutUsTitle{
+        text-align: center;
+        padding-top: 30px; 
+        font-weight: bold;
+    }
+    
+    .contentAboutUs{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 40px;
+        text-align: justify;
+        font-size: 2vw;
+    }
+    
+    .volunteGreenLogo{
+        text-align: center; 
+        padding-top: 40px;
+        font-weight: bold;
+        font-size: 6vw; 
+        color: white; 
+        -webkit-text-stroke: 2px black;
+    }
+
+    .cardAboutUs{
+        background-color: #FFFFFF;
+        width: 36vh;
+        margin-top: 80px; 
+        margin-left: 80px; 
+        border-radius: 20px;
+    }
+    .namaDaus{
+        margin-left: -4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaVania{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaIlham{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaLisa{
+        margin-left: 12px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaFebri{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaRosy{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:460px) {
+    .contentAboutUs{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 40px;
+        text-align: justify;
+        font-size: 2.4vw;
+    }
+    
+    .cardAboutUs{
+        width: 45vh;
+    }
+    .namaDaus{
+        margin-left: -4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaVania{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaIlham{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaLisa{
+        margin-left: 12px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaFebri{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaRosy{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .contentAboutUs{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 40px;
+        text-align: justify;
+        font-size: 2.4vw;
+    }
+    
+    .cardAboutUs{
+        width: 48vh;
+    }
+    .namaDaus{
+        margin-left: -4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaVania{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaIlham{
+        margin-left: 4px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaLisa{
+        margin-left: 12px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaFebri{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+    
+    .namaRosy{
+        margin-left: 8px;
+        margin-top: 12px;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:570px) {
+    .contentAboutUs{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 40px;
+        text-align: justify;
+        font-size: 2.4vw;
+    }
+    
+    .cardAboutUs{
+        width: 60vh;
+    }
+    .namaDaus{
+        margin-left: -4px;
+        margin-top: 14px;
+    }
+    
+    .namaVania{
+        margin-left: 4px;
+        margin-top: 12px;
+    }
+    
+    .namaIlham{
+        margin-left: 4px;
+        margin-top: 12px;
+    }
+    
+    .namaLisa{
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    
+    .namaFebri{
+        margin-left: 8px;
+        margin-top: 12px;
+    }
+    
+    .namaRosy{
+        margin-left: 8px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .cardAboutUs{
+        width: 80vh;
+    }
+    .namaDaus{
+        margin-left: -4px;
+        margin-top: 14px;
+    }
+    
+    .namaVania{
+        margin-left: 4px;
+        margin-top: 11px;
+    }
+    
+    .namaIlham{
+        margin-left: 4px;
+        margin-top: 14px;
+    }
+    
+    .namaLisa{
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    
+    .namaFebri{
+        margin-left: 8px;
+        margin-top: 12px;
+    }
+    
+    .namaRosy{
+        margin-left: 8px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .cardAboutUs{
+        width: 100vh;
+    }
+    .namaDaus{
+        margin-left:-4px;
+        margin-top: 14px;
+    }
+    
+    .namaVania{
+        margin-left: 6px;
+        margin-top: 11px;
+    }
+    
+    .namaIlham{
+        margin-left: 6px;
+        margin-top: 14px;
+    }
+    
+    .namaLisa{
+        margin-left: 16px;
+        margin-top: 12px;
+    }
+    
+    .namaFebri{
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    
+    .namaRosy{
+        margin-left: 14px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width:980px) {
+    .cardAboutUs{
+        width: 120vh;
+    }
+    .namaDaus{
+        margin-left: 4px;
+        margin-top: 14px;
+    }
+    
+    .namaVania{
+        margin-left: 16px;
+        margin-top: 11px;
+    }
+    
+    .namaIlham{
+        margin-left: 18px;
+        margin-top: 14px;
+    }
+    
+    .namaLisa{
+        margin-left: 28px;
+        margin-top: 12px;
+    }
+    
+    .namaFebri{
+        margin-left: 26px;
+        margin-top: 12px;
+    }
+    
+    .namaRosy{
+        margin-left: 24px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .cardAboutUs{
+        width: 160vh;
+    }
+    .namaDaus{
+        margin-left: 4px;
+        margin-top: 14px;
+    }
+    
+    .namaVania{
+        margin-left: 16px;
+        margin-top: 11px;
+    }
+    
+    .namaIlham{
+        margin-left: 18px;
+        margin-top: 14px;
+    }
+    
+    .namaLisa{
+        margin-left: 28px;
+        margin-top: 12px;
+    }
+    
+    .namaFebri{
+        margin-left: 26px;
+        margin-top: 12px;
+    }
+    
+    .namaRosy{
+        margin-left: 24px;
+        margin-top: 12px;
+    }
+    
+}
+
+@media screen and (min-width:1050px) {
+    .cardAboutUs{
+        background-color: #FFFFFF;
+        width: 180vh;
+        margin-top: 80px; 
+        margin-left: 115px; 
+        border-radius: 20px;
+    }
+    
+    .aboutUsTitle{
+        text-align: center;
+        padding-top: 60px; 
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    
+    .volunteGreenLogo{
+        text-align: center; 
+        padding-top: 60px;
+        font-weight: bold;
+        font-size: 4vw; 
+        color: white; 
+        -webkit-text-stroke: 2px black;
+    }
+    
+    .contentAboutUs{
+        padding-left: 140px;
+        padding-right: 140px;
+        padding-top: 60px;
+        text-align: justify;
+        font-size: 1.5vw;
+    }
+    
+    .profielAboutUs{
+        padding-bottom: 80vh;
+    }
+    
+    #titleLearnTrack{
+        padding-bottom: 40px;
+    }
+    
+    .imgProfile{
+        width: 10vw;
+    }
+    
+    /* CSS DARI NAMA */
+    
+    .namaDaus{
+        margin-left: 18px;
+        margin-top: 14px;
+        font-size: 2vw;
+    }
+    
+    .namaVania{
+        margin-left: 28px;
+        margin-top: 11px;
+        font-size: 2vw;
+    }
+    
+    .namaIlham{
+        margin-left: 34px;
+        margin-top: 14px;
+        font-size: 2vw;
+    }
+    
+    .namaLisa{
+        margin-left: 40px;
+        margin-top: 12px;
+        font-size: 2vw;
+    }
+    
+    .namaFebri{
+        margin-left: 36px;
+        margin-top: 12px;
+        font-size: 2vw;
+    }
+    
+    .namaRosy{
+        margin-left: 38px;
+        margin-top: 12px;
+        font-size: 2vw;
+    }
+}
