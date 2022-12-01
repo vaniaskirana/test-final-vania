@@ -20,7 +20,7 @@ const DataContactUs = () => {
                 <div className="row">
                     <center>
                         <a href="mailto:voluntegreen@gmail.com?" target="blank">
-                        <img  tsrc="img/gmailImg.png" className="iconGmail"/>
+                        <img src="img/gmailImg.png" className="iconGmail"/>
                         </a>
                     </center>
                 </div>
