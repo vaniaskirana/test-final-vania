@@ -4,7 +4,7 @@ import './Komunitas.css'
 const Komunitas = () => {
     return(
         <>  
-            <div className="cardKomunitas">
+            <div className="cardKomunitas" id='cardUpload'>
 
                 <div className="card-body d-flex flex-row">
                     <div>
