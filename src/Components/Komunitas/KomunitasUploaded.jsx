@@ -45,7 +45,9 @@ const KomunitasUploaded = () => {
                 </div>
 
                 <div className='uploadedImage'>
+                    <center>
                     <img src="img/Container.png"/>
+                    </center>
                 </div>
 
                 <div className="daerahUpload">
@@ -67,23 +69,23 @@ const KomunitasUploaded = () => {
                     {/* <br/> */}
                 </div>
 
-                <div className="d-flex flex-row">
+                <div className="d-flex flex-row komen-share">
                     <div className="commentSectionIcon d-flex flex-row">
-                        <div>
+                        <div className="shareCommentIcon">
                             <img src="img/iconComment.png" />
                         </div>
                         
-                        <div style={{marginLeft: "2vh", fontWeight: "bolder"}}>
+                        <div className="shareCommentText" style={{marginLeft: "2vh", fontWeight: "bolder"}}>
                             Comment
                         </div>
                     </div>
 
                     <div className="shareSectionIcon d-flex flex-row">
-                        <div>
+                        <div className="shareCommentIcon">
                             <img src="img/iconShare.png" />
                         </div>
                         
-                        <div style={{marginLeft: "2vh", fontWeight: "bolder"}}>
+                        <div className="shareCommentText" style={{marginLeft: "2vh", fontWeight: "bolder"}}>
                             Share
                         </div>
                     </div>

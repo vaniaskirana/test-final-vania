@@ -96,13 +96,13 @@ const Login = () => {
           <div className="container-xxxl">
           <div className="row" id="logre">
           <div className="col volunteelore">
-            <h1 style={{textAlign: "center", paddingLeft: "4.6rem"}}>VolunteGreen</h1>
+            <h1 style={{textAlign: "left", paddingLeft: "5rem"}}>VolunteGreen</h1>
             {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
             </div>
 
-              <div className="col">
+              <div className="col justify-right formmm">
                 
-                  <form id="form" style={{paddingLeft: "9rem"}}>
+                  <form id="form" className="col formkotakk" >
                     <br/><br/>
                     <h1 className="text-center">LOGIN</h1>
                     <div className="col">

@@ -22,15 +22,22 @@ function AdminDashboard() {
     //     getData()
     //   }, []);
 
+    // const getUsersBE = async () => {
+    //     axios.get('https://voluntegreen.onrender.com/admin')
+    //    .then(res => 
+    //    setTotalSum(res.data.data.length)
+    //    // console.log(res.data.data)
+    //    )
+    //    .catch((err) => console.log(err))
+    // };
     const getUsersBE = async () => {
-        axios.get('https://voluntegreen.onrender.com/admin')
+        axios.get(api_url)
        .then(res => 
        setTotalSum(res.data.data.length)
-
        // console.log(res.data.data)
        )
        .catch((err) => console.log(err))
-};
+    };
 
     useEffect(() => {
         getUsersBE();

@@ -83,17 +83,17 @@ const Register = () => {
     <div >
       
       <div className="row" id="logre">
-        <div className="col volunteelore">
-            <h1 style={{textAlign: "center", paddingLeft: "16rem"}}>VolunteGreen</h1>
+        <div className="col-1 volunteelore">
+            <h1 style={{textAlign: "left", paddingLeft: "5rem"}}>VolunteGreen</h1>
             {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
-            </div>
+        </div>
 
       <div className="col formm " >
      
       <section className="container-xxl" style={{display: "flex", zIndex:"2"}}>
         <div className="row">
-          <div className="col ">
-            <form id="form ">
+          <div className="container">
+            <form id="form " className="col-12  registerkotakk">
               <h2 className="text-center">REGISTER</h2>
               <div className="col">
                 <label className="form-label">Username</label>
@@ -141,14 +141,14 @@ const Register = () => {
               <div className="text-center d-grid gap-2">
                 <button
                   type="submit"
-                  className="btn btn-success"
+                  className="btn text-center btn-success"
                   // style="--bs-bg-opacity: .5;"
                   id="btn-regis"
                   onClick={handleBtn}
                 >
                   Submit
                 </button>
-                <Link to={"/"} style={{ textDecoration: "none" }}>
+                <Link to={"/"} className="sudahpunya" style={{ textDecoration: "none" }}>
                   Sudah punya akun?
                 </Link>
               </div>
