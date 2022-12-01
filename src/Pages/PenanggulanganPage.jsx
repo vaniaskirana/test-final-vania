@@ -7,12 +7,21 @@ import DataFetching3 from "../Components/DataFetching/DataFetching3"
 import Penanggulangan3 from "../Components/Penanggulangan/Penanggulangan3"
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
+import Login from "../Components/Logres/Login"
 
 // import '../css/readmore.css'
 // import '../css/style-penanggulangan.css'
 
 const PenanggulanganPage = () => {
-    return(
+    const cekEmail = localStorage.getItem("account");
+    const cekPassword = localStorage.getItem("pass");
+    return (
+      <>
+       {!cekEmail && !cekPassword? (
+        
+        <Login/>
+        
+      ) : (
         <div id="penanggulanganpagee">
             <Navbar/>
             <DataFetching1/>
@@ -23,6 +32,8 @@ const PenanggulanganPage = () => {
             <Penanggulangan3/>
             <Footer/>
         </div>
+      )}
+      </>
     )
 }
 

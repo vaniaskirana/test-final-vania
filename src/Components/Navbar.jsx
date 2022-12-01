@@ -59,7 +59,7 @@ function Navbar() {
                 
                     </li>
                     <li className="nav-item dropdown akun">
-                    <a className="nav-link navmenu" href="#contact">Contact Us</a>
+                    <Link to={"/contactus"} style={{textDecoration: 'none'}} className="nav-link navmenu">Contact Us</Link>
                     </li>
 
                     <li className="nav-item dropdown akun">

@@ -1,12 +1,10 @@
 
-import Footer from "../Footer"
-import Navbar from "../Navbar"
 import "./aboutUs.css"
 
 const DataAboutUs = () => {
     return(
-        <div id="AboutUsPagee">
-            <Navbar/>
+        <div>
+            {/* <Navbar/> */}
 
             <div className="card cardAboutUs ">
             
@@ -77,8 +75,6 @@ const DataAboutUs = () => {
             <br></br>
             <br></br>
             <br></br>
-            <Footer/>
-           
         </div>
     )
 }

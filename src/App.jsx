@@ -21,6 +21,9 @@ import EditProfile from './Components/Akun/EditProfile'
 import Profile from './Components/Akun/Profile'
 import DataAboutUs from './Components/AboutUs/DataAboutUs'
 import KomunitasPage from './Pages/KomunitasPage'
+import DampakPage from './Pages/DampakPage'
+import AboutUsPage from './Pages/AboutUsPage'
+import ContactUsPage from './Pages/ContactUsPage'
 // import Forum from './Pages/Forum'
 // import './css/style-penanggulangan.css'
 
@@ -38,15 +41,16 @@ function App() {
           <Route path="/pencegahan" element={<PenanggulanganPage/>}/>
           <Route path="/dashboard" element={<HomePage/>} />
           
-          <Route path="/dampak" element={<FetchDampak/>}/>
+          <Route path="/dampak" element={<DampakPage/>}/>
         {/* </Route> */}
         <Route path="/admin" element={<AdminPage/>}/>
         <Route path="/admin-crud" element={<AdminCrud/>}/>
         {/* <Route path="/forum" element={<Forum/>}/>  */}
-        <Route path="/about" element={<DataAboutUs/>}/>
+        <Route path="/about" element={<AboutUsPage/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path='/editprofile/:id' element={<EditProfile/>}/>
         <Route path="/forum" element={<KomunitasPage/>}/>
+        <Route path="/contactus" element={<ContactUsPage/>}/>
       </Routes>
       {/* <Footer/> */}
     </>

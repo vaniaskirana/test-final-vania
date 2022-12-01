@@ -121,7 +121,7 @@ const Penanggulangan = () => {
             </div>
 
             <div className="col">
-                <img src={pencemaranAirImg} id="gambar-pencemaran" style={{marginTop:"2rem", width: "50vw", marginLeft: "1.5rem", justifyItems: "center"}}/>
+                <img src={pencemaranAirImg} id="gambar-pencemaran" style={{marginTop:"2rem", marginBottomp:"100px", width: "50vw", marginLeft: "1.5rem", justifyItems: "center", borderRadius: "50px"}}/>
             </div>
         </div>
     </div>

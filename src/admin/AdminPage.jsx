@@ -4,9 +4,18 @@ import './admin.css'
 import './adminscss/_topbar.scss'
 import AdminTopBar from './admincomponents/AdminTopBar'
 import AdminDashboard from './admincomponents/AdminDashboard'
+import Login from '../Components/Logres/Login'
 
 function AdminPage() {
+  const cekEmail = localStorage.getItem("account");
+  const cekPassword = localStorage.getItem("pass");
   return (
+    <>
+     {!cekEmail && !cekPassword? (
+      
+      <Login/>
+      
+    ) : (
     <div className="page-top" id="adminpagee">
     
     {/* <!-- Page Wrapper --> */}
@@ -16,6 +25,8 @@ function AdminPage() {
         <AdminDashboard/>
     </div>
     </div>
+    )}
+    </>
   )
 }
 
