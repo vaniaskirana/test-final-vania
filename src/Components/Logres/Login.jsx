@@ -22,6 +22,7 @@ import Footer from "../Footer";
 
 const Login = () => {
   const cekEmail = localStorage.getItem("account");
+  const username = localStorage.getItem("username");
   const cekPassword = localStorage.getItem("pass");
   const token = localStorage.getItem("token")
   const roles = localStorage.getItem("roles")
@@ -136,21 +137,25 @@ const Login = () => {
       });
       console.log(respons);
       console.log(respons.data.token);
+      console.log(respons.data.username);
       console.log(respons.data.email);
       console.log(respons.data.roles);
       const obj = Object.values(respons.data.roles)
       // const propertyValues = Object.values(respons.data.email);
-      console.log(obj[0]);
+      // console.log(obj[0]); ini buat nampilin di console Roles nya berapa tanpa tanda ".." atau [....]
 
       // console.log(respons.data.roles);
       // console.log(respons);
       localStorage.setItem("account", email);
       localStorage.setItem("token", respons.data.token)
+      localStorage.setItem("username", respons.data.username)
       localStorage.setItem("roles", obj)
 
       if(obj[0] === "63876e9ff672199d9a7a61e6"){
         localStorage.setItem("roles", roles);
         localStorage.setItem("account", email);
+      localStorage.setItem("username", username)
+
         // console.log(roles);
         alert("Sedang memuat, silahkan menunggu.");
         // localStorage.setItem("pass", password);

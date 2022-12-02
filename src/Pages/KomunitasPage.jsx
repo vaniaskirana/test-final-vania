@@ -17,8 +17,27 @@ const cekEmail = localStorage.getItem("account");
                 <Navbar/>
                 <Komunitas/>
                 <KomunitasUploaded/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <Footer/>
+
             </div>
+            
         )}
         </>
     )

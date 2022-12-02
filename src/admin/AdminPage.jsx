@@ -5,6 +5,7 @@ import './adminscss/_topbar.scss'
 import AdminTopBar from './admincomponents/AdminTopBar'
 import AdminDashboard from './admincomponents/AdminDashboard'
 import Login from '../Components/Logres/Login'
+import Footer from '../Components/Footer'
 
 function AdminPage() {
   const cekEmail = localStorage.getItem("account");
@@ -23,6 +24,7 @@ function AdminPage() {
         <AdminSideBar/>
         <AdminTopBar/>
         <AdminDashboard/>
+        
     </div>
     </div>
     )}
