@@ -47,7 +47,7 @@ function App() {
         <Route path="/admin-crud" element={<AdminCrud/>}/>
         {/* <Route path="/forum" element={<Forum/>}/>  */}
         <Route path="/about" element={<AboutUsPage/>}/>
-        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/profile/:id" element={<Profile/>}/>
         <Route path='/editprofile/:id' element={<EditProfile/>}/>
         <Route path="/forum" element={<KomunitasPage/>}/>
         <Route path="/contactus" element={<ContactUsPage/>}/>

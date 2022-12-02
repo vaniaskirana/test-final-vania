@@ -66,7 +66,7 @@ function Navbar() {
 
                     <li className="nav-item dropdown akun">
 
-                     <Link to={"/profile"} style={{ textDecoration: "none" }} className="nav-link" >Account
+                     <Link to={"/profile/2"} style={{ textDecoration: "none" }} className="nav-link" >Account
                     <img src="img/avatar.png" width="60"/></Link>       
                     </li>
                 

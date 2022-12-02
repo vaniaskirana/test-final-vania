@@ -1,11 +1,10 @@
 import "/src/css/Profile.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
 import EditProfile from "./EditProfile";
-import Footer from "../Footer";
 
 const Profile = () => {
   const [namaDepan, setNamaDepan] = useState("");
@@ -16,9 +15,6 @@ const Profile = () => {
   const [noHp, setNoHp] = useState("");
   const [alamat, setAlamat] = useState("");
   const {id} =useParams("2")
-  const navigation = useNavigate();
-
-
   useEffect(()=>{
     getUserById()
   },[])
@@ -47,7 +43,7 @@ const Profile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigation('/editprofile/2')
+    navigation(`/editprofile/2`)
     // axios
     //   .get("https://63528ae6a9f3f34c37409536.mockapi.io/profile", {
     //     namaDepan: namaDepan,
@@ -188,14 +184,12 @@ const Profile = () => {
                   >
                     Edit
                   </button>
-                  <Link to="/dashboard"><p>Kembali</p></Link>
                 </div>
               </form>
             </div>
           </div>
         </section>
       </div>
-      <Footer/>
     </>
   );
 };

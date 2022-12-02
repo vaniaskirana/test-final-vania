@@ -38,7 +38,7 @@ const EditProfile = () => {
       setAlamat(e.target.value);
     };
     const handleCancel = (e) => {
-      navigation(`/profile/${id}`)
+      navigation(`/profile/:id`)
     };
   
     const handleEdit = (e) => {
