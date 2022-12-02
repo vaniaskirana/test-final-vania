@@ -23,11 +23,13 @@ import Footer from "../Footer";
 const Login = () => {
   const cekEmail = localStorage.getItem("account");
   const cekPassword = localStorage.getItem("pass");
+  const token = localStorage.getItem("token")
 
   const navigation = useNavigate();
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [id, setId] = useState("");
 
   const [users, setUsers] = useState([]);
   const [requestError, setRequestError] = useState();
@@ -123,17 +125,33 @@ const Login = () => {
 
   const handleBtn = async (e) => {
     e.preventDefault()
+    console.log("halo");
 
     try {
-      await axios.post('https://voluntegreen.onrender.com/signin', {
+      const respons = await axios.post('https://voluntegreen.onrender.com/signin', {
         email: email,
         password: password
       });
+      console.log(respons.data.token);
       localStorage.setItem("account", email);
+      localStorage.setItem("token", respons.data.token)
       alert("Loading");
 
+      if(email=== "febe11@gmail.com"){
+        // localStorage.setItem("roles", roles);
+        localStorage.setItem("account", email);
+        // console.log(roles);
+        alert("Loading");
+        // localStorage.setItem("pass", password);
+        navigation("/admin/:_id");
+      }else {
+        localStorage.setItem("account", email);
+        alert("Loading");
+        // localStorage.setItem("pass", password);
+        navigation("/dashboard");
+      }
       // localStorage.setItem("pass", password);
-      navigation("/dashboard");
+      // navigation("/dashboard");
     }catch(error){
       
         alert("Mohon Check kembali data Anda.");

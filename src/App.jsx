@@ -43,8 +43,8 @@ function App() {
           
           <Route path="/dampak" element={<DampakPage/>}/>
         {/* </Route> */}
-        <Route path="/admin" element={<AdminPage/>}/>
-        <Route path="/admin-crud" element={<AdminCrud/>}/>
+        <Route path="/admin/:_id" element={<AdminPage/>}/>
+        <Route path="/admin-crud/:_id" element={<AdminCrud/>}/>
         {/* <Route path="/forum" element={<Forum/>}/>  */}
         <Route path="/about" element={<AboutUsPage/>}/>
         <Route path="/profile" element={<Profile/>}/>
