@@ -9,6 +9,8 @@ function AdminSideBar() {
     const HandleLogout = (e) => {
         e.preventDefault()
         localStorage.removeItem("account")
+        localStorage.removeItem("token")
+        localStorage.removeItem("roles")
         // window.location.reload()
         navigation(`/`)
     };

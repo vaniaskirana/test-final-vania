@@ -24,12 +24,13 @@ const Login = () => {
   const cekEmail = localStorage.getItem("account");
   const cekPassword = localStorage.getItem("pass");
   const token = localStorage.getItem("token")
+  const roles = localStorage.getItem("roles")
 
   const navigation = useNavigate();
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [id, setId] = useState("");
+  // const [roles, setRoles] = useState("");
 
   const [users, setUsers] = useState([]);
   const [requestError, setRequestError] = useState();
@@ -130,20 +131,30 @@ const Login = () => {
     try {
       const respons = await axios.post('https://voluntegreen.onrender.com/signin', {
         email: email,
+        roles: roles,
         password: password
       });
+      console.log(respons);
       console.log(respons.data.token);
+      console.log(respons.data.email);
+      console.log(respons.data.roles);
+      const obj = Object.values(respons.data.roles)
+      // const propertyValues = Object.values(respons.data.email);
+      console.log(obj[0]);
+
+      // console.log(respons.data.roles);
+      // console.log(respons);
       localStorage.setItem("account", email);
       localStorage.setItem("token", respons.data.token)
-      alert("Loading");
+      localStorage.setItem("roles", obj)
 
-      if(email=== "febe11@gmail.com"){
-        // localStorage.setItem("roles", roles);
+      if(obj[0] === "63876e9ff672199d9a7a61e6"){
+        localStorage.setItem("roles", roles);
         localStorage.setItem("account", email);
         // console.log(roles);
-        alert("Loading");
+        alert("Sedang memuat, silahkan menunggu.");
         // localStorage.setItem("pass", password);
-        navigation("/admin/:_id");
+        navigation("/admin");
       }else {
         localStorage.setItem("account", email);
         alert("Loading");

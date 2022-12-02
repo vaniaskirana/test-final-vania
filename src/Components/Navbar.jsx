@@ -11,6 +11,7 @@ function Navbar() {
         e.preventDefault()
         localStorage.removeItem("account")
         localStorage.removeItem("token")
+        localStorage.removeItem("roles")
         // window.location.reload()
         navigation(`/`)
     };

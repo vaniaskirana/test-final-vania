@@ -138,7 +138,7 @@ const getUsersBE = async () => {
         try {
             await axios.delete(`https://voluntegreen.onrender.com/admin/${_id}`);
             getUsersBE();
-            console.log(_id)
+            console.log(_id + " has been deleted")
         } catch (error){
             console.log(error);
         }
