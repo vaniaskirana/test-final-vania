@@ -7,7 +7,7 @@ import AdminTopBar from './admincomponents/AdminTopBar'
 import Login from '../Components/Logres/Login'
 import AdminCForum from './admincomponents/AdminCForum'
 
-function AdminCrud() {
+function AdminCrudForum() {
   const cekEmail = localStorage.getItem("account");
   const cekPassword = localStorage.getItem("pass");
   return (
@@ -23,7 +23,7 @@ function AdminCrud() {
     <div id="wrapper">
         <AdminSideBar/>
         <AdminTopBar/>
-        <AdminCPengguna/>
+        <AdminCForum/>
     </div>
     </div>
     )}
@@ -31,4 +31,4 @@ function AdminCrud() {
   )
 }
 
-export default AdminCrud
+export default AdminCrudForum

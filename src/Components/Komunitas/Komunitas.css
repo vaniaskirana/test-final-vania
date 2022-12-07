@@ -102,7 +102,7 @@ body{
 }
 
 .contentTextUpload{
-    text-align: justify;
+    /* text-align: justify; */
     margin-left: 3vh;
     margin-right: 3vh;
 }

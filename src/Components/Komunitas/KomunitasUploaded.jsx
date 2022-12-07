@@ -13,7 +13,7 @@ const KomunitasUploaded = () => {
 
         var disqus_config = function () {
         this.page.url = document.location.href;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = document.location.href.split(".org")[1]; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.identifier = document.location.href.split(".org")[0]; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
@@ -24,14 +24,59 @@ const KomunitasUploaded = () => {
 
         
 
+        // const [postingan, setPostingan] = useState([]);
+        // useEffect(()=>{
+        //     axios('https://6388c9d6a4bb27a7f791bf55.mockapi.io/komunitas')
+        //     .then(res => {
+        //         console.log(res.data)
+        //         setPostingan(res.data)
+        //     })
+        // },[]);
         const [postingan, setPostingan] = useState([]);
         useEffect(()=>{
-            axios('https://6388c9d6a4bb27a7f791bf55.mockapi.io/komunitas')
+            // getUsersId();
+            axios('https://voluntegreen.onrender.com/userpage')
             .then(res => {
-                console.log(res.data)
-                setPostingan(res.data)
-            })
+                console.log(res.data.data),
+                setPostingan(res.data.data)
+            }
+            )
         },[]);
+
+        axios.interceptors.request.use(
+            config => {
+                config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
+                return config;
+            },
+            error => {
+                return Promise.reject(error);
+            }
+        )
+
+        // const deleteUser = async (_id) => {
+        //     try {
+        //         await axios.delete(`https://voluntegreen.onrender.com/admin/${_id}`);
+        //         getUsersBE();
+        //         console.log(_id + " has been deleted")
+        //     } catch (error){
+        //         console.log(error);
+        //     }
+        // }
+
+
+        // ini buat belajar get data by PostedBy
+        // const [userId, setUserId] = useState([]);
+        // const getUsersId = async () => {
+        //     axios.get(`https://voluntegreen.onrender.com/userpage/6389e1adc137fc5e3de327c2`)
+        //    .then(res => 
+        //     // setUserId(res.data.data),
+        // //    console.log(res.data.result.postedBy.username)
+        //    setUserId(res.data.result.postedBy.username)
+        // //    console.log(res.data.data)
+        // //    console.log(res)
+        //    )
+        //    .catch((err) => console.log(err))
+        // };
 
     return(
         <>
@@ -44,12 +89,13 @@ const KomunitasUploaded = () => {
                     </div>
                     <div className='contentUpload'>
                         <li>
-                            <h5 id='namaUser'>{localStorage.getItem("username")}</h5>
+                            {/* <h5 id='namaUser'>{localStorage.getItem("username")}</h5> */}
+                            <h5 id='namaUser'>{item._id}   (Secret) </h5>
                         </li>
                         <li>
                             <div className="d-flex flex-row">
                                 <div className='waktuUploaded'>
-                                    <p>{item.time_stamp}</p>
+                                    <p>{item.createdAt}</p>
                                 </div>
                             </div>
                         </li>
@@ -58,20 +104,23 @@ const KomunitasUploaded = () => {
                 </div>
                 <div className='uploadedImage'>
                     <center>
-                    <img src={item.img} style={{ width:"90%"}}/>
+                    <img src={item.image} style={{ width:"80%"}}/>
                     </center>
                 </div>
                 <div className="daerahUpload">
-                    {item.location}
+                    {item.alamat}
                 </div>
+
                 <div className="titleUpload">
                     <p>{item.title}</p>
                 </div>
+
                 <div className="contentTextUpload">
                     <p>
                         {item.content}
                     </p>
                 </div>
+                
                 <div className="d-flex flex-row komen-share">
                     <div className="commentSectionIcon d-flex flex-row">
                         <div className="shareCommentIcon">
@@ -86,7 +135,7 @@ const KomunitasUploaded = () => {
                             <img src="img/iconShare.png" />
                         </div>
                     <div className="shareCommentText" style={{marginLeft: "2vh", fontWeight: "bolder"}}>
-                            Share
+                            <p onClick={disqus_config}>Share</p>
                         </div>
                     </div>
                 </div>

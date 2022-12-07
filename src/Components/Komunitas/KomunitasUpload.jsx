@@ -33,21 +33,21 @@ const navigate = useNavigate();
         setImage(e.target.value);
     };
 
-    const handleBtn = (e) => {
-        e.preventDefault();
-        axios.post("https://6388c9d6a4bb27a7f791bf55.mockapi.io/komunitas", {
-            title: title,
-            content: content,
-            alamat: alamat,
-            img: image,
-        })
-    alert("Data berhasil di input")
-    navigate("/forum")
-        .catch((error) => {
-            console.log(error);
-            alert("error");
-        });
-    }
+    // const handleBtn = (e) => {
+    //     e.preventDefault();
+    //     axios.post("https://6388c9d6a4bb27a7f791bf55.mockapi.io/komunitas", {
+    //         title: title,
+    //         content: content,
+    //         alamat: alamat,
+    //         img: image,
+    //     })
+    // alert("Data berhasil di input")
+    // navigate("/forum")
+    //     .catch((error) => {
+    //         console.log(error);
+    //         alert("error");
+    //     });
+    // }
 
     useEffect(() => {
         // refreshToken();
@@ -64,28 +64,28 @@ const navigate = useNavigate();
     //      });
     //      console.log(result)
 
-    // const handleBtn = async () => {
-        // e.preventDefault();
-    //     console.log("huhuhu")
-    //    try {
-    //     console.log("huhuhu dalem")
+    const handleBtn = async (e) => {
+        e.preventDefault();
+        console.log("huhuhu")
+       try {
+        console.log("huhuhu dalem")
         
-    //     const result =  await axios.post('https://voluntegreen.onrender.com/userpage', {
+        const result =  await axios.post('https://voluntegreen.onrender.com/userpage', {
            
-    //          title: title,
-    //          content: content,
-    //          alamat: alamat,
-    //          image: image
-    //      });
-    //      console.log(result)
-    //      alert("Berhasil Posting!");
-    //      console.log("berhasill posting")
-    //      // navigation("/");
-    //    }catch(error){        
-    //        alert("Mohon periksa kembali data Anda.");
-    //        console.log("gagal posting");
-    //     }
-
+             title: title,
+             content: content,
+             alamat: alamat,
+             image: image
+         });
+         console.log(result)
+         alert("Berhasil Posting! Silahkan Refresh Web");
+         console.log("berhasill posting")
+         // navigation("/");
+       }catch(error){        
+           alert("Mohon periksa kembali data Anda.");
+           console.log("gagal posting");
+        }
+    }
 
 
         // setSaveImage({ title, content, alamat, image });
@@ -127,15 +127,15 @@ const navigate = useNavigate();
     // }
     
 
-    // axios.interceptors.request.use(
-    //     config => {
-    //         config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
-    //         return config;
-    //     },
-    //     error => {
-    //         return Promise.reject(error);
-    //     }
-    // )
+    axios.interceptors.request.use(
+        config => {
+            config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
+            return config;
+        },
+        error => {
+            return Promise.reject(error);
+        }
+    )
     
     // const fetchData = useCallback(async () => {
     //     try {
