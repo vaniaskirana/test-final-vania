@@ -8,8 +8,6 @@ import { useNavigate } from 'react-router-dom'
 
 
 function AdminCForum() {
-    const api_url = "https://testvoluntegreen.onrender.com/users";
-    // const [apiUser, setApiUser] = useState([])
     const {_id} = useParams()
 
 const [name, setName] = useState('');
@@ -113,7 +111,7 @@ const getUsersBE = async () => {
                 <td>{item.title}</td>
                 <td>{item.createdAt}</td>
                 {/* <td>123</td> */}
-                <td><a onClick={() => deleteUser(item._id)}><i className="fa fa-trash" aria-hidden="true" title='Delete Post'></i></a></td>
+                <td><a onClick={() => deleteUser(item._id)}><i className="fa fa-trash" aria-hidden="true" title='Delete Akun'></i></a></td>
                 
             </tr>
             {/* <tr>

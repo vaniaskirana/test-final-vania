@@ -19,7 +19,6 @@ function AdminCrudForum() {
     ) : (
     <div className="page-top" id="adminpagee">
     
-    {/* <!-- Page Wrapper --> */}
     <div id="wrapper">
         <AdminSideBar/>
         <AdminTopBar/>
