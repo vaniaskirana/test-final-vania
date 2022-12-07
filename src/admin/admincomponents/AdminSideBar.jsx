@@ -98,10 +98,10 @@ return (
 
 
             {/* <!-- Sidebar Message --> */}
-            <div className="sidebar-card d-lg-flex">
+            <div className="sidebar-card d-lg-flex logoutAdmin">
                 {/* <img className="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="..."/> */}
                 <p className="text-center mb-2">Thankyou, see you again!</p>
-                <a onClick={HandleLogout} className="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Logout</a>
+                <a onClick={HandleLogout} className="btn btn-success btn-sm " href="https://startbootstrap.com/theme/sb-admin-pro">Logout</a>
             </div>
 
         </ul>

@@ -159,6 +159,8 @@ const getUsersBE = async () => {
     <>
     
       {/* <!-- Begin Page Content --> */}
+
+    <center>
     <div className="crudd">
 
         {/* <!-- Page Heading --> */}
@@ -202,7 +204,7 @@ const getUsersBE = async () => {
     </table>
 
 </div>
-
+</center>
 
     </>
     )

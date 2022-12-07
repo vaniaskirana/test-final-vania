@@ -173,7 +173,7 @@ const navigate = useNavigate();
                     <div className='contentUpload'>
                         <li>
                             <a href="#popup" style={{textDecoration: "none"}}>
-                            <button className='formInput' href="#popup"><p>Bagikan kondisi lingkungan sekitar Anda</p></button>
+                            <button className='formInput' href="#popup" ><p style={{ fontSize:"1.4vw"}}>Bagikan kondisi lingkungan sekitar Anda</p></button>
                             </a>
                         </li>
                         <li>
@@ -216,7 +216,7 @@ const navigate = useNavigate();
                         <input className="form-control" id="exampleFormControlTextarea1" rows="1" placeholder='Judul' value={title} htmlFor="title" onChange={handleTitle}></input>
                         <textarea className="form-control" id="exampleFormControlTextarea2" rows="6" placeholder='Bagikan kondisi lingkungan sekitar Anda' value={content} onChange={handleContent}></textarea>
                         <input className="form-control" id="exampleFormControlTextarea3" rows="1" placeholder='Lokasi kejadian (Kota, Provinsi)' value={alamat} onChange={handleLokasi}></input>
-                        <input type="input" id='input' title="img addres url" className="col-9 d-flex flex-row" value={image} onChange={handleImage} style={{marginLeft: "80px", border: "ridge"}}>
+                        <input type="input" id='input' title="img addres url" className="col-9 d-flex flex-row"  placeholder='Paste here Image Address' value={image} onChange={handleImage} style={{marginLeft: "80px", fontSize: "1vw"}}>
                         </input>
 
                         <center><button className='buttonPost' type='submit' onClick={handleBtn}>Post</button></center>

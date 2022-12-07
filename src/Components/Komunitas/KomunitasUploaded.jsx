@@ -90,7 +90,7 @@ const KomunitasUploaded = () => {
                     <div className='contentUpload'>
                         <li>
                             {/* <h5 id='namaUser'>{localStorage.getItem("username")}</h5> */}
-                            <h5 id='namaUser'>{item._id}   (Secret) </h5>
+                            <h5 id='namaUser' style={{ fontSize:"2vw"}}>{item._id}   (Secret) </h5>
                         </li>
                         <li>
                             <div className="d-flex flex-row">
@@ -143,8 +143,6 @@ const KomunitasUploaded = () => {
                 <br/>
                 <div className='disqus' id="disqus_thread"></div>
             </div>
-            <br/>
-            <br/>
             </>
         ))}
             {/* <div className="cardKomunitas">
